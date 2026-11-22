@@ -19,7 +19,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
 
     devkit = {
-      url = "github:hakulab/devkit/61682dd34d15732234bac835f3603de8de5b86f1";
+      url = "github:hakulab/devkit/v3.7.1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
