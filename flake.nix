@@ -83,7 +83,7 @@
             pkgs.git
             pkgs.git-cliff
           ];
-          inputsFrom = [ preCommit.shell ];
+          inputsFrom = [ preCommit ];
         };
 
         # ------------------------------------------------------------------------------------------
@@ -98,7 +98,6 @@
         # Checks
         # ------------------------------------------------------------------------------------------
         checks = {
-          pre-commit = preCommit.check;
           package = cleanGone;
           tests = dk.nuTests {
             src = ./src;
