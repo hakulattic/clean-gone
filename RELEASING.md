@@ -1,6 +1,6 @@
 # Releasing
 
-Follow [devkit's release procedure](https://github.com/hakulab/devkit/blob/v3.7.1/docs/releasing.md#release-your-repository) with the contracts below.
+Follow [devkit's release procedure](https://github.com/hakulab/devkit/blob/v3/docs/releasing.md#release-your-repository) with the contracts below.
 
 ## Compatibility
 

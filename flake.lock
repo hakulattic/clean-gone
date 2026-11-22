@@ -18,7 +18,7 @@
       },
       "original": {
         "owner": "hakulab",
-        "ref": "v3.7.1",
+        "ref": "v3",
         "repo": "devkit",
         "type": "github"
       }
