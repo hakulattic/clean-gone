@@ -19,7 +19,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
 
     devkit = {
-      url = "github:hakula139/devkit/61682dd34d15732234bac835f3603de8de5b86f1";
+      url = "github:hakulab/devkit/v3";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -50,7 +50,7 @@
           ];
           meta = {
             description = "Remove finished local Git branches and stale linked worktrees";
-            homepage = "https://github.com/hakula139/clean-gone";
+            homepage = "https://github.com/hakulattic/clean-gone";
             license = lib.licenses.mit;
             platforms = lib.platforms.unix;
           };
@@ -83,7 +83,7 @@
             pkgs.git
             pkgs.git-cliff
           ];
-          inputsFrom = [ preCommit.shell ];
+          inputsFrom = [ preCommit ];
         };
 
         # ------------------------------------------------------------------------------------------
@@ -98,7 +98,6 @@
         # Checks
         # ------------------------------------------------------------------------------------------
         checks = {
-          pre-commit = preCommit.check;
           package = cleanGone;
           tests = dk.nuTests {
             src = ./src;

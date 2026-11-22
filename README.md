@@ -10,13 +10,13 @@ Remove finished local Git branches and stale linked worktrees after preserving i
 With Nix flakes enabled:
 
 ```bash
-nix profile install github:hakula139/clean-gone
+nix profile install github:hakulattic/clean-gone
 ```
 
 Or run without installing:
 
 ```bash
-nix run github:hakula139/clean-gone -- --help
+nix run github:hakulattic/clean-gone -- --help
 ```
 
 The package supplies Nushell, Git, lsof, OpenSSH, and GNU coreutils on `aarch64-darwin`, `aarch64-linux`, and `x86_64-linux`. Supply an authenticated `gh` for GitHub or `glab` for GitLab on your own PATH. Keeping the forge CLI on your PATH preserves host authentication wrappers. The flake also exports `packages.<system>.clean-gone` and `overlays.default`.
@@ -54,4 +54,4 @@ The command applies cleanup by default. `--dry-run` reports `PLAN` actions witho
 
 `SKIP` lines explain items that need attention, and the process exits with status 1 when any item is skipped. Explicit fatal safety checks exit with status 2. A successful sweep exits with status 0. Follow up on the review hint before discarding skipped work.
 
-[workflow]: https://github.com/hakula139/plugins/tree/main/plugins/hakula-workflow/skills/clean-gone
+[workflow]: https://github.com/hakulab/plugins/tree/main/plugins/hakula-workflow/skills/clean-gone
