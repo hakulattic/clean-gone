@@ -52,7 +52,7 @@ commit_preprocessors = [
   # that Rust regex lacks, so already-fenced spans stay as they are.
   { pattern = '(^|[^`])(<\/?[a-zA-Z][^>]*>)', replace = '$1`$2`' },
   # GitHub does not autolink `#N` in rendered Markdown files.
-  { pattern = '\(#([0-9]+)\)', replace = '([#$1](https://github.com/hakula139/clean-gone/pull/$1))' },
+  { pattern = '\(#([0-9]+)\)', replace = '([#$1](https://github.com/hakulattic/clean-gone/pull/$1))' },
 ]
 
 # `<!-- N -->` prefixes, which the body template strips, order the sections. The first match wins,
